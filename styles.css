@@ -29,7 +29,11 @@ body {
   color: var(--ink);
   font-family: "Manrope", "Segoe UI", sans-serif;
   background:
-    radial-gradient(circle at 14% 8%, rgba(255, 255, 255, 0.85), transparent 40%),
+    radial-gradient(
+      circle at 14% 8%,
+      rgba(255, 255, 255, 0.85),
+      transparent 40%
+    ),
     radial-gradient(circle at 86% 84%, rgba(17, 46, 131, 0.1), transparent 36%),
     var(--cream);
 }
@@ -111,13 +115,13 @@ main {
 }
 
 .hero {
-  --hero-image: url("assets/gallery/Bild3.jpg");
+  --hero-image: url("assets/gallery/thumbnail.jpeg");
   margin-top: 1.05rem;
   min-height: clamp(450px, 78vh, 780px);
   border-radius: calc(var(--radius) + 8px);
   background-image:
     linear-gradient(135deg, rgba(17, 46, 131, 0.46), rgba(17, 46, 131, 0.14)),
-    url("assets/gallery/Bild3.jpg");
+    url("assets/gallery/thumbnail.jpeg");
   background-size: cover;
   background-position: center;
   display: grid;
@@ -257,7 +261,9 @@ h2 {
   overflow: hidden;
   background: #eee8da;
   box-shadow: var(--shadow-soft);
-  transition: transform var(--ease), box-shadow var(--ease);
+  transition:
+    transform var(--ease),
+    box-shadow var(--ease);
 }
 
 .tile:hover {
@@ -343,7 +349,9 @@ footer p {
 .section-reveal {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 900ms ease, transform 900ms ease;
+  transition:
+    opacity 900ms ease,
+    transform 900ms ease;
 }
 
 .section-reveal.is-visible {
